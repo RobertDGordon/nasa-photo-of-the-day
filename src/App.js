@@ -1,12 +1,12 @@
 import React from "react";
 import "./App.css";
-import Weather from "./components/Weather"
+import Photo from "./components/Photo"
 
 function App() {
   return (
     <div className="App">
       <p>
-        <Weather />
+        <Photo />
         Read through the instructions in the README.md file to build your NASA
         app! Have fun 🚀!
       </p>
