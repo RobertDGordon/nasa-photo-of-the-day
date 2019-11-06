@@ -1,15 +1,20 @@
-import React from "react";
+import React, {useState} from "react";
 import "./App.css";
 import Photo from "./components/Photo"
+
+function DateInput(){
+  const [dateChange, setDateChange] = useState("")
+  return (
+    <div>
+
+    </div>
+  )
+}
 
 function App() {
   return (
     <div className="App">
-      <p>
         <Photo />
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
     </div>
   );
 }

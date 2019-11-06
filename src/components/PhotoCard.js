@@ -3,12 +3,11 @@ import React from "react";
 function PhotoCard(props){
 
     return (
-        <div>
+        <div className="image-card">
+            <img src={props.url} alt="Astronomy Phot of the Day" />
             <h1>{props.title}</h1>
-            <img src={props.url} alt="Astronomy Photo of the Day" />
-            <p>{props.date}</p>
+            <h2>Date: {props.date}</h2>
             <p>{props.desc}</p>
-
         </div>
     )
 }
