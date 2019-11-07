@@ -14,6 +14,7 @@ function DateInput(){
 function App() {
   return (
     <div className="App">
+        <div><p>Astronomy Photo of the Day:</p></div>
         <Photo />
     </div>
   );
