@@ -7,7 +7,7 @@ function Photo(){
     const [newdate, setNewdate] = useState("2019-11-06");
     const [year, setYear] = useState(2019)
     const [month, setMonth] = useState(11)
-    const [day, setDay] = useState(6)
+    const [day, setDay] = useState(1)
 
     function Daypicker(choice){
         if (choice === 'today'){
@@ -18,11 +18,23 @@ function Photo(){
             setMonth(today.getMonth()+1)
             setDay(today.getDate())
         }else if (choice === "prev"){
-            console.log (choice)
-            setDay(day-1)
+            console.log (choice, year, month, day)
+            if (day === 1){
+                setDay(30)
+                setMonth(month-1)
+                console.log ("month change", year, month, day)
+            }else{
+                setDay(day-1)
+            }
         }else if (choice === "next"){
-            console.log (choice)
-            setDay(day+1)
+            console.log (choice, year, month, day)
+            if (day === 30){
+                setDay(1)
+                setMonth(month+1)
+                console.log ("month change", year, month, day)
+            }else{
+                setDay(day+1)
+            }
         }
     }
     
