@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
 }
 
 code {
@@ -19,6 +20,8 @@ code {
   justify-content: center;
   align-items: center;
   width: 50%;
+  height: 70vh;
+  overflow: auto;
   background-color: grey;
   border: 1px solid black;
   border-radius: 10px;
@@ -29,6 +32,7 @@ code {
   margin-top: 10px;
   width:400px;
   box-shadow: 2px 2px black;
+
 }
 .image-card p{
   margin: 0 20px 10px 20px;
