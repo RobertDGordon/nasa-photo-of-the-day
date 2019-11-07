@@ -4,7 +4,7 @@ import PhotoCard from "./PhotoCard"
 
 function Photo(){
     const [apod, setApod] = useState([]);
-    const [newdate, setNewdate] = useState("2019-11-06");
+    // const [newdate, setNewdate] = useState("2019-11-06");
     const [year, setYear] = useState(2019)
     const [month, setMonth] = useState(11)
     const [day, setDay] = useState(1)
@@ -20,18 +20,18 @@ function Photo(){
         }else if (choice === "prev"){
             console.log (choice, year, month, day)
             if (day === 1){
-                setDay(30)
+                setDay(31)
                 setMonth(month-1)
-                console.log ("month change", year, month, day)
+                console.log ("month change")
             }else{
                 setDay(day-1)
             }
         }else if (choice === "next"){
             console.log (choice, year, month, day)
-            if (day === 30){
+            if (day === 31){
                 setDay(1)
                 setMonth(month+1)
-                console.log ("month change", year, month, day)
+                console.log ("month change")
             }else{
                 setDay(day+1)
             }

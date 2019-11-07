@@ -1,15 +1,6 @@
-import React, {useState} from "react";
+import React from "react";
 import "./App.css";
 import Photo from "./components/Photo"
-
-function DateInput(){
-  const [dateChange, setDateChange] = useState("")
-  return (
-    <div>
-
-    </div>
-  )
-}
 
 function App() {
   return (
