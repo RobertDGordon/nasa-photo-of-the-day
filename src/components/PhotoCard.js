@@ -14,8 +14,12 @@ const ImageCard = styled.div`
   border: 1px solid black;
   border-radius: 10px;
   box-shadow: 2px 2px black;
-}
+  p{
+    margin: 0 20px 10px 20px;
+    color: whitesmoke;
+  }
 `
+
 
 const ImageDisplay = styled.img`
     margin-top: 10px;

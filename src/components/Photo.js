@@ -22,14 +22,14 @@ const PhotoButton = styled.button`
 function Photo(){
     const [apod, setApod] = useState([]);
     // const [newdate, setNewdate] = useState("2019-11-06");
-    const [year, setYear] = useState(2019)
-    const [month, setMonth] = useState(3)
-    const [day, setDay] = useState(1)
+    const today = new Date();
+    const [year, setYear] = useState(today.getFullYear())
+    const [month, setMonth] = useState(today.getMonth()+1)
+    const [day, setDay] = useState(today.getDate())
 
     function Daypicker(choice){
         if (choice === 'today'){
             console.log (choice)
-            const today = new Date();
             console.log (today)
             setYear(today.getFullYear())
             setMonth(today.getMonth()+1)
