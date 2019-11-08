@@ -10,7 +10,7 @@ library.add(faBars)
 
 
 const Header = styled.div`
-  width: 60%;
+  width: 50%;
   color: white;
   margin: 0 auto;
   display: flex;

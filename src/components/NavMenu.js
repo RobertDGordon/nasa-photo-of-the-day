@@ -1,6 +1,4 @@
 import React from 'react';
-// import { styled } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -8,9 +6,13 @@ import styled from "styled-components";
 
 const NavButton = styled.div`
   width: 100px;
-  color: white;
-  margin: 10px 20px;
+  color: #e3e3e3;
+  /* margin: 10px 20px; */
   font-size: 2.8rem;
+  transition: all 0.3s;
+  &:hover{
+      color: white;
+  }
 `
 
 export default function NavMenu() {
